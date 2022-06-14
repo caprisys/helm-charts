@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/github/license/rwunderer/helm-charts.svg)](https://github.com/rwunderer/helm-charts/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/caprisys/helm-charts.svg)](https://github.com/caprisys/helm-charts/blob/main/LICENSE)
 
 # helm-charts
 Helm charts for various public projects
@@ -12,11 +12,11 @@ Helm charts for various public projects
 Add the repository to helm:
 
 ```
-helm repo add rwunderer https://rwunderer.github.io/helm-charts/
+helm repo add caprisys https://caprisys.github.io/helm-charts/
 ```
 
 Install a chart:
 
 ```
-helm install rwunderer/passless-operator
+helm install caprisys/passless-operator
 ```
