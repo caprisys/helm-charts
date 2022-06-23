@@ -3,6 +3,23 @@ entries:
   kivitendo:
   - apiVersion: v2
     appVersion: v3.5.8
+    created: "2022-06-23T07:24:38.833442494Z"
+    description: Helm chart for Kivitendo ERP
+    digest: 843d218bbc06634909389cc701af81640aa02966fba0eed7d69f970199ae4d70
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: kivitendo
+    sources:
+    - https://github.com/kivitendo/kivitendo-erp
+    - https://github.com/rwunderer/kivitendo
+    - https://github.com/caprisys/helm-charts/tree/main/charts/kivitendo
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/kivitendo-1.3.3/kivitendo-1.3.3.tgz
+    version: 1.3.3
+  - apiVersion: v2
+    appVersion: v3.5.8
     created: "2021-11-15T17:43:52.19877133Z"
     description: Helm chart for Kivitendo ERP
     digest: b69e774ca4dcdd683203b3db74319a8198819d1620bff5ac1c7486cfc5b2824a
@@ -69,7 +86,40 @@ entries:
     urls:
     - https://github.com/rwunderer/helm-charts/releases/download/kivitendo-1.2.0/kivitendo-1.2.0.tgz
     version: 1.2.0
+  kube-oidc-proxy:
+  - apiVersion: v2
+    appVersion: v0.3.0
+    created: "2022-06-23T07:24:38.999021553Z"
+    description: A Helm chart for kube-oidc-proxy
+    digest: a2a0b5a756b3ab0b6f2110196a36a6773396b8d5cd25de5cc3cd92b569d8fb63
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: kube-oidc-proxy
+    sources:
+    - https://github.com/jetstack/kube-oidc-proxy
+    - https://github.com/caprisys/helm-charts/tree/main/charts/kube-oidc-proxy
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/kube-oidc-proxy-0.4.2/kube-oidc-proxy-0.4.2.tgz
+    version: 0.4.2
   passless-operator:
+  - apiVersion: v2
+    appVersion: v0.3.0
+    created: "2022-06-23T07:24:39.201164614Z"
+    description: Secret Management without the need for storage
+    digest: 7479922ae99e7157dd5b7ff4c207d03a059acf952f23a84d9fc84727b2a78907
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: passless-operator
+    sources:
+    - https://github.com/wavesoftware/passless-operator
+    - https://github.com/caprisys/helm-charts/tree/main/charts/passless-operator
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/passless-operator-0.3.2/passless-operator-0.3.2.tgz
+    version: 0.3.2
   - apiVersion: v2
     appVersion: v0.3.0
     created: "2021-11-30T16:35:19.516143843Z"
@@ -283,4 +333,4 @@ entries:
     urls:
     - https://github.com/rwunderer/helm-charts/releases/download/sealed-secrets-1.16.1/sealed-secrets-1.16.1.tgz
     version: 1.16.1
-generated: "2021-12-03T13:01:04.409005584Z"
+generated: "2022-06-23T07:24:39.201260714Z"
