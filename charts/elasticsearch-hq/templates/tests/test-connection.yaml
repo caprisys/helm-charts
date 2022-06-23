@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "elasticsearch-hq.fullname" . }}-test-connection"
+  labels:
+{{ include "elasticsearch-hq.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args:  ['{{ include "elasticsearch-hq.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
