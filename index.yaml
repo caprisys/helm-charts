@@ -3,6 +3,23 @@ entries:
   elasticsearch-hq:
   - apiVersion: v2
     appVersion: 3.5.12
+    created: "2022-06-23T08:20:22.439718862Z"
+    description: 'A Helm chart for ElasticHQ: Elasticsearch Management and Monitoring
+      application'
+    digest: 7e0c5497e3984ae872e68a201d66e5ee42c7b4457ec14750341a4f34c5b28370
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: elasticsearch-hq
+    sources:
+    - https://github.com/ElasticHQ/elasticsearch-HQ
+    - https://github.com/caprisys/helm-charts/tree/main/charts/elasticsearch-hq
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/elasticsearch-hq-0.4.2/elasticsearch-hq-0.4.2.tgz
+    version: 0.4.2
+  - apiVersion: v2
+    appVersion: 3.5.12
     created: "2022-06-23T07:49:31.527402325Z"
     description: 'A Helm chart for ElasticHQ: Elasticsearch Management and Monitoring
       application'
@@ -351,4 +368,4 @@ entries:
     urls:
     - https://github.com/rwunderer/helm-charts/releases/download/sealed-secrets-1.16.1/sealed-secrets-1.16.1.tgz
     version: 1.16.1
-generated: "2022-06-23T07:49:31.527456625Z"
+generated: "2022-06-23T08:20:22.439910062Z"
