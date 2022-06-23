@@ -29,4 +29,4 @@ maintainers:
 
 sources:
   - https://github.com/jetstack/kube-oidc-proxy
-  - https://github.com/rwunderer/helm-charts/tree/main/charts/kube-oidc-proxy
+  - https://github.com/caprisys/helm-charts/tree/main/charts/kube-oidc-proxy

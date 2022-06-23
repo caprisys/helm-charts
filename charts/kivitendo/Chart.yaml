@@ -29,4 +29,4 @@ maintainers:
 sources:
   - https://github.com/kivitendo/kivitendo-erp
   - https://github.com/rwunderer/kivitendo
-  - https://github.com/rwunderer/helm-charts/tree/main/charts/kivitendo
+  - https://github.com/caprisys/helm-charts/tree/main/charts/kivitendo
