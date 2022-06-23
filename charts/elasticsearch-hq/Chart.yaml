@@ -19,3 +19,11 @@ version: 0.4.0
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application.
 appVersion: 3.5.12
+
+maintainers:
+  - name: rwunderer
+    email: techsupport@caprisys.net
+
+sources:
+  - https://github.com/ElasticHQ/elasticsearch-HQ
+  - https://github.com/caprisys/helm-charts/tree/main/charts/elasticsearch-hq
