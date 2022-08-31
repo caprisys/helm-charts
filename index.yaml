@@ -3,6 +3,23 @@ entries:
   elasticsearch-hq:
   - apiVersion: v2
     appVersion: 3.5.12
+    created: "2022-08-31T12:30:31.710697588Z"
+    description: 'A Helm chart for ElasticHQ: Elasticsearch Management and Monitoring
+      application'
+    digest: efe27092d83cabf948cce2e61e08c12bc42d747c57c3861d32b7aa24ee0d0be0
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: elasticsearch-hq
+    sources:
+    - https://github.com/ElasticHQ/elasticsearch-HQ
+    - https://github.com/caprisys/helm-charts/tree/main/charts/elasticsearch-hq
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/elasticsearch-hq-0.4.3/elasticsearch-hq-0.4.3.tgz
+    version: 0.4.3
+  - apiVersion: v2
+    appVersion: 3.5.12
     created: "2022-06-23T08:20:22.439718862Z"
     description: 'A Helm chart for ElasticHQ: Elasticsearch Management and Monitoring
       application'
@@ -36,6 +53,23 @@ entries:
     - https://github.com/caprisys/helm-charts/releases/download/elasticsearch-hq-0.4.1/elasticsearch-hq-0.4.1.tgz
     version: 0.4.1
   kivitendo:
+  - apiVersion: v2
+    appVersion: v3.6.1
+    created: "2022-08-31T12:30:32.008457244Z"
+    description: Helm chart for Kivitendo ERP
+    digest: 24410514ee49af071a8364ab8055ede8dcd583e7aeab27852ef5ad9792f08f15
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: kivitendo
+    sources:
+    - https://github.com/kivitendo/kivitendo-erp
+    - https://github.com/rwunderer/kivitendo
+    - https://github.com/caprisys/helm-charts/tree/main/charts/kivitendo
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/kivitendo-1.4.3/kivitendo-1.4.3.tgz
+    version: 1.4.3
   - apiVersion: v2
     appVersion: v3.6.1
     created: "2022-08-23T14:05:46.390403355Z"
@@ -158,6 +192,22 @@ entries:
   kube-oidc-proxy:
   - apiVersion: v2
     appVersion: v0.3.0
+    created: "2022-08-31T12:30:32.303679988Z"
+    description: A Helm chart for kube-oidc-proxy
+    digest: f864d612c889012793cefd2a744c3fc3677c1882b6cb372383b97b497d9b24b4
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: kube-oidc-proxy
+    sources:
+    - https://github.com/jetstack/kube-oidc-proxy
+    - https://github.com/caprisys/helm-charts/tree/main/charts/kube-oidc-proxy
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/kube-oidc-proxy-0.4.3/kube-oidc-proxy-0.4.3.tgz
+    version: 0.4.3
+  - apiVersion: v2
+    appVersion: v0.3.0
     created: "2022-06-23T07:24:38.999021553Z"
     description: A Helm chart for kube-oidc-proxy
     digest: a2a0b5a756b3ab0b6f2110196a36a6773396b8d5cd25de5cc3cd92b569d8fb63
@@ -173,6 +223,22 @@ entries:
     - https://github.com/caprisys/helm-charts/releases/download/kube-oidc-proxy-0.4.2/kube-oidc-proxy-0.4.2.tgz
     version: 0.4.2
   passless-operator:
+  - apiVersion: v2
+    appVersion: v0.3.0
+    created: "2022-08-31T12:30:32.609203687Z"
+    description: Secret Management without the need for storage
+    digest: dc5c7ec49d3b1196c72e028f624243f11105f11a7c5a451097ba99c1fbf15eac
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: passless-operator
+    sources:
+    - https://github.com/wavesoftware/passless-operator
+    - https://github.com/caprisys/helm-charts/tree/main/charts/passless-operator
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/passless-operator-0.3.6/passless-operator-0.3.6.tgz
+    version: 0.3.6
   - apiVersion: v2
     appVersion: v0.3.0
     created: "2022-08-26T15:22:59.626537568Z"
@@ -404,6 +470,22 @@ entries:
   sealed-secrets:
   - apiVersion: v2
     appVersion: v0.16.0
+    created: "2022-08-31T12:30:32.936770361Z"
+    description: Helm chart for the sealed-secrets controller.
+    digest: 66b32800159e80da341f09cffac9ba515531716cb04cbe839246b65518ee0da8
+    home: https://github.com/bitnami-labs/sealed-secrets
+    icon: https://avatars0.githubusercontent.com/u/34656521?s=200&v=4
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mmikulicic@gmail.com
+      name: mkmik
+    name: sealed-secrets
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/sealed-secrets-1.16.4/sealed-secrets-1.16.4.tgz
+    version: 1.16.4
+  - apiVersion: v2
+    appVersion: v0.16.0
     created: "2021-12-03T13:01:04.408925083Z"
     description: Helm chart for the sealed-secrets controller.
     digest: e5ca2fdde70d32e70d17c280a6a00bf488850938b38e6f778ec991c63dabf36b
@@ -450,4 +532,4 @@ entries:
     urls:
     - https://github.com/rwunderer/helm-charts/releases/download/sealed-secrets-1.16.1/sealed-secrets-1.16.1.tgz
     version: 1.16.1
-generated: "2022-08-26T15:22:59.626784567Z"
+generated: "2022-08-31T12:30:32.936953569Z"
