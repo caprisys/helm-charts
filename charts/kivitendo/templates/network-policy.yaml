@@ -58,8 +58,8 @@ spec:
             app.kubernetes.io/name: kivitendo-backup
   podSelector:
     matchLabels:
+      app.kubernetes.io/component: primary
       app.kubernetes.io/name: postgresql
-      role: primary
   policyTypes:
   - Ingress
 ---
@@ -76,8 +76,8 @@ spec:
       to:
       - podSelector:
           matchLabels:
+            app.kubernetes.io/component: primary
             app.kubernetes.io/name: postgresql
-            role: primary
   podSelector:
     matchLabels:
       app.kubernetes.io/name: kivitendo
@@ -98,8 +98,8 @@ spec:
       to:
       - podSelector:
           matchLabels:
+            app.kubernetes.io/component: primary
             app.kubernetes.io/name: postgresql
-            role: primary
   podSelector:
     matchLabels:
       app.kubernetes.io/name: kivitendo-backup
