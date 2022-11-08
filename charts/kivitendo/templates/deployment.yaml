@@ -72,6 +72,12 @@ spec:
             httpGet:
               path: /
               port: http-alt
+          startupProbe:
+            httpGet:
+              path: /
+              port: http-alt
+            periodSeconds: 5
+            failureThreshold: 12
           volumeMounts:
             - name: tmp
               mountPath: /tmp
