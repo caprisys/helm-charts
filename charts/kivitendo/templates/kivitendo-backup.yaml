@@ -57,6 +57,8 @@ spec:
                   drop:
                   - ALL
                 readOnlyRootFilesystem: true
+                seccompProfile:
+                  type: RuntimeDefault
           containers:
             - name: s3-backup
               image: "{{ .Values.backupJob.image.repository }}:{{ .Values.backupJob.image.tag }}"
@@ -69,6 +71,8 @@ spec:
                   drop:
                   - ALL
                 readOnlyRootFilesystem: true
+                seccompProfile:
+                  type: RuntimeDefault
               command: ["/usr/local/bin/backup_databases.sh"]
               env:
                 - name: DB_REGEX
