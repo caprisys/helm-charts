@@ -55,6 +55,23 @@ entries:
   kivitendo:
   - apiVersion: v2
     appVersion: v3.6.1
+    created: "2022-11-10T12:55:40.822977063Z"
+    description: Helm chart for Kivitendo ERP
+    digest: c67ea24646e46524e5970735f6a9ddaa6917f122e20d4bfd8a7b5eb710358fce
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: kivitendo
+    sources:
+    - https://github.com/kivitendo/kivitendo-erp
+    - https://github.com/rwunderer/kivitendo
+    - https://github.com/caprisys/helm-charts/tree/main/charts/kivitendo
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/kivitendo-1.5.2/kivitendo-1.5.2.tgz
+    version: 1.5.2
+  - apiVersion: v2
+    appVersion: v3.6.1
     created: "2022-11-08T11:34:56.414256954Z"
     description: Helm chart for Kivitendo ERP
     digest: 1ac387c9f22a85dc2b96857e7a261ad28a1b980ecb1111b91f3be46b02f87681
@@ -583,4 +600,4 @@ entries:
     urls:
     - https://github.com/rwunderer/helm-charts/releases/download/sealed-secrets-1.16.1/sealed-secrets-1.16.1.tgz
     version: 1.16.1
-generated: "2022-11-08T11:34:56.414546783Z"
+generated: "2022-11-10T12:55:40.823114064Z"
