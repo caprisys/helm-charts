@@ -31,7 +31,7 @@ spec:
             runAsNonRoot: true
           initContainers:
             - name: wait-for-postgres
-              image: "{{ .Values.backupJob.image.repository }}:{{ .Values.backupJob.image.tag }}"
+              image: {{ include "kivitendo.image" ( dict "imageRoot" .Values.backupJob.image "global" $) }}
               imagePullPolicy: {{ .Values.backupJob.image.pullPolicy }}
               command:
                 - timeout
@@ -61,7 +61,7 @@ spec:
                   type: RuntimeDefault
           containers:
             - name: s3-backup
-              image: "{{ .Values.backupJob.image.repository }}:{{ .Values.backupJob.image.tag }}"
+              image: {{ include "kivitendo.image" ( dict "imageRoot" .Values.backupJob.image "global" $) }}
               imagePullPolicy: {{ .Values.backupJob.image.pullPolicy }}
               securityContext:
                 runAsNonRoot: true

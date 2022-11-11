@@ -60,3 +60,18 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+
+{{/*
+Return the image name to use
+{{ include "kivitendo.image" ( dict "imageRoot" .Values.path.to.image "global" $) }}
+*/}}
+{{- define "kivitendo.image" -}}
+{{- $repositoryName := .imageRoot.repository -}}
+{{- $separator := ":" -}}
+{{- $termination := .imageRoot.tag | default .global.Chart.AppVersion | toString -}}
+{{- if .imageRoot.digest }}
+    {{- $separator = "@" -}}
+    {{- $termination = .imageRoot.digest | toString -}}
+{{- end -}}
+{{- printf "%s%s%s" $repositoryName $separator $termination -}}
+{{- end }}

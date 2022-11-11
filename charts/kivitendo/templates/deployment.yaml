@@ -32,7 +32,7 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          image: {{ include "kivitendo.image" ( dict "imageRoot" .Values.image "global" $ ) }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: POSTGRES_HOST
@@ -96,7 +96,7 @@ spec:
         - name: taskserver
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          image: {{ include "kivitendo.image" ( dict "imageRoot" .Values.image "global" $ ) }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: [ "/usr/local/bin/startTaskserver.sh" ]
           env:

@@ -23,10 +23,11 @@ kivitendo:
   smtpLogin: ""
 
 image:
-  repository: rwunderer/kivitendo
+  repository: ghcr.io/rwunderer/kivitendo
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
+  digest: "sha256:5758b0e438952bc9a84756404f999f5af1cb691b602773797701d5a956cd148f"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -49,9 +50,10 @@ backupJob:
     key: ""
 
   image:
-    repository: rwunderer/postgres-s3backup
+    repository: ghcr.io/rwunderer/postgres-s3backup
     pullPolicy: IfNotPresent
-    tag: "v0.5.0"
+    tag: "v0.6.0"
+    digest: "sha256:e09a8aa0bd03edf4ee8f0500fa84fa4ae9d81e0c6bc5bfe616a7367d35a1d4ef"
 
 networkPolicy:
   enable: false
