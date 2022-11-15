@@ -55,6 +55,8 @@ backupJob:
     tag: "v0.6.0"
     digest: "sha256:e09a8aa0bd03edf4ee8f0500fa84fa4ae9d81e0c6bc5bfe616a7367d35a1d4ef"
 
+  resources: {}
+
 networkPolicy:
   enable: false
 

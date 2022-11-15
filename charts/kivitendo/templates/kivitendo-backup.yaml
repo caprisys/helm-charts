@@ -104,6 +104,8 @@ spec:
                   value: {{ .Values.backupJob.s3BaseUrl }}
                 - name: GPG_RECIPIENT
                   value: {{ .Values.backupJob.gpgRecipient }}
+              resources:
+                {{- toYaml .Values.backupJob.resources | nindent 16 }}
               volumeMounts:
               - name: home
                 mountPath: /home/s3-backup
