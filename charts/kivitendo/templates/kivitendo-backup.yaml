@@ -77,8 +77,8 @@ spec:
               env:
                 - name: DB_REGEX
                   value: {{ .Values.backupJob.dbRegex | quote }}
-                - name: DAYS_TO_KEEP
-                  value: "30"
+                - name: S3_REGION
+                  value: {{ .Values.backupJob.s3Region }}
                 - name: PGHOST
                   value: "{{ .Values.database.postgresHost }}"
                 - name: PGUSER

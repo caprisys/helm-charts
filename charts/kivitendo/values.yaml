@@ -42,6 +42,7 @@ backupJob:
   existingSecretName: "kivitendo-backup"
   s3Endpoint: ""
   s3BaseUrl: ""
+  s3Region: ""
   gpgRecipient: ""
 
   postgresUser: "postgres"
@@ -52,8 +53,8 @@ backupJob:
   image:
     repository: ghcr.io/rwunderer/postgres-s3backup
     pullPolicy: IfNotPresent
-    tag: "v0.6.0"
-    digest: "sha256:e09a8aa0bd03edf4ee8f0500fa84fa4ae9d81e0c6bc5bfe616a7367d35a1d4ef"
+    tag: "v0.7.0"
+    digest: "sha256:8f1fc619e5fc6bd9fbeefdc6ae09709593eb1fef85db226875f8dbe5e930ce70"
 
   resources: {}
 
