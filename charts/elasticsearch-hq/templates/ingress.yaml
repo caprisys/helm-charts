@@ -23,6 +23,9 @@ metadata:
       proxy_set_header X-Email $email;
       auth_request_set $token $upstream_http_authorization;
       proxy_set_header Authorization $token;
+  {{- with .Values.ingress.annotations }}
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 spec:
   {{- if and .Values.ingress.className (semverCompare ">=1.18-0" .Capabilities.KubeVersion.GitVersion) }}
   ingressClassName: {{ .Values.ingress.className }}
