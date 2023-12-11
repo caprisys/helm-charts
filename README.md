@@ -5,7 +5,6 @@ Helm charts for various public projects
 
 * [ElasticHQ](https://github.com/ElasticHQ/elasticsearch-HQ)
 * [Kivitendo](https://github.com/kivitendo/kivitendo-erp)
-* [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets)
 * [Passless Operator](https://github.com/wavesoftware/passless-operator)
 
 ## Installing Charts from this Repository
