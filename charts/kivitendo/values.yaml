@@ -27,7 +27,7 @@ image:
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
-  digest: "sha256:5758b0e438952bc9a84756404f999f5af1cb691b602773797701d5a956cd148f"
+  digest: "sha256:6fb774896fc25a45ec53e95b8cabf3279bc948847edfe9154fb2d37591d94c47"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -53,8 +53,8 @@ backupJob:
   image:
     repository: ghcr.io/rwunderer/postgres-s3backup
     pullPolicy: IfNotPresent
-    tag: "v0.7.0@sha256:8f1fc619e5fc6bd9fbeefdc6ae09709593eb1fef85db226875f8dbe5e930ce70"
-    digest: "sha256:8f1fc619e5fc6bd9fbeefdc6ae09709593eb1fef85db226875f8dbe5e930ce70"
+    tag: "v0.8.0"
+    digest: "sha256:e095933e3537c0a9e6fd8d5e5892560bb7fd288a476d03922759b2e237d23617"
 
   resources: {}
 
