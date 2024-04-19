@@ -2,9 +2,7 @@ name: Test Helm Charts
 
 on:
   push:
-    branches:
-      - '*'
-      - '!main'
+    branches: [ "github-renovate/*" ]
 
 jobs:
   test:
