@@ -5,13 +5,12 @@
     "regexManagers:helmChartYamlAppVersions",
     "github>rwunderer/renovate"
   ],
-
   "packageRules": [
     {
       "matchManagers": [
         "helmv3",
         "helm-values",
-        "regex"
+        "custom.regex"
       ],
       "postUpgradeTasks": {
         "commands": [
