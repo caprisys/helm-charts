@@ -1,10 +1,6 @@
 {{- if .Values.rbac.create }}
 apiVersion: rbac.authorization.k8s.io/v1
-{{- if .Values.watchNamespace }}
-kind: ClusterRole
-{{- else }}
 kind: Role
-{{- end }}
 metadata:
   name: {{ include "ps-operator.fullname" . }}-leaderelection
   namespace: {{ .Release.Namespace }}
@@ -44,14 +40,20 @@ rules:
   - patch
 ---
 apiVersion: rbac.authorization.k8s.io/v1
-{{- if .Values.watchNamespace }}
+{{- if .Values.watchAllNamespaces }}
 kind: ClusterRole
 {{- else }}
 kind: Role
 {{- end }}
 metadata:
   name: {{ include "ps-operator.fullname" . }}
+  {{- if not .Values.watchAllNamespaces }}
+  {{- if .Values.watchNamespace }}
+  namespace: {{ .Values.watchNamespace }}
+  {{- else }}
   namespace: {{ .Release.Namespace }}
+  {{- end }}
+  {{- end }}
   labels:
 {{ include "ps-operator.labels" . | indent 4 }}
 rules:

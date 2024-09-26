@@ -9,6 +9,13 @@ image:
   tag: 0.8.0
   pullPolicy: IfNotPresent
 
+# set if you want to specify a namespace to watch
+# defaults to `.Release.namespace` if left blank
+# watchNamespace:
+
+# set if operator should be deployed in cluster wide mode. defaults to false
+watchAllNamespaces: false
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -27,6 +34,17 @@ env:
   logStructured: false
   logLevel: "INFO"
 
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop: ["ALL"]
+  readOnlyRootFilesystem: true
+  runAsNonRoot: true
+  runAsUser: 2
+  runAsGroup: 2
+  seccompProfile:
+    type: RuntimeDefault
+
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
@@ -38,17 +56,6 @@ resources: {}
   # requests:
   #   cpu: 100m
   #   memory: 128Mi
-
-securityContext:
-  allowPrivilegeEscalation: false
-  capabilities:
-    drop: ["ALL"]
-  readOnlyRootFilesystem: true
-  runAsNonRoot: true
-  runAsUser: 2
-  runAsGroup: 2
-  seccompProfile:
-    type: RuntimeDefault
 
 nodeSelector: {}
 
