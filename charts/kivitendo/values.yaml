@@ -53,7 +53,7 @@ backupJob:
   image:
     repository: ghcr.io/rwunderer/postgres-s3backup
     pullPolicy: IfNotPresent
-    tag: "v0.8.0"
+    tag: "v0.8.0@sha256:5f484e17c4ad70921d2549eb5d1736367185ed463a2b4af1e6cd709d951422af"
     digest: "sha256:e095933e3537c0a9e6fd8d5e5892560bb7fd288a476d03922759b2e237d23617"
 
   resources: {}
