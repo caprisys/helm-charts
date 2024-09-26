@@ -39,6 +39,17 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop: ["ALL"]
+  readOnlyRootFilesystem: true
+  runAsNonRoot: true
+  runAsUser: 2
+  runAsGroup: 2
+  seccompProfile:
+    type: RuntimeDefault
+
 nodeSelector: {}
 
 tolerations: []
