@@ -58,4 +58,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: {{ include "ps-operator.fullname" . }}
+  {{- if .Values.watchAllNamespaces }}
+  namespace: {{ .Release.Namespace }}
+  {{- end }}
 {{- end }}
