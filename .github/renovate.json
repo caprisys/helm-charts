@@ -5,6 +5,10 @@
     "customManagers:helmChartYamlAppVersions",
     "github>rwunderer/renovate"
   ],
+  "helm-values": {
+    "enabled": true,
+    "pinDigests": false
+  },
   "packageRules": [
     {
       "matchManagers": [
