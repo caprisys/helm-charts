@@ -44,7 +44,7 @@ spec:
             - --tls-cert-file=/certs/tls.crt
             - --tls-private-key-file=/certs/tls.key
             - --secure-port={{ .Values.listenPort }}
-            {{- range $values.extraArgs }}
+            {{- range .Values.extraArgs }}
             - {{ . }}
             {{- end}}
           env:
@@ -54,12 +54,12 @@ spec:
                   fieldPath: metadata.namespace
             - name: GROUP_NAME
               value: {{ .Values.groupName | quote }}
-            {{- range $values.extraEnv }}
+            {{- range .Values.extraEnv }}
             - {{- toYaml . | nindent 6 }}
             {{- end }}
-          {{- if $values.envFrom }}
+          {{- if .Values.envFrom }}
           envFrom:
-            {{- toYaml $values.envFrom | nindent 4 }}
+            {{- toYaml .Values.envFrom | nindent 4 }}
           {{- end }}
           ports:
             - name: https

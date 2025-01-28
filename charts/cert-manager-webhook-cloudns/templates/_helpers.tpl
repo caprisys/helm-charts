@@ -60,3 +60,19 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+
+{{- define "cert-manager-webhook-cloudns.selfSignedIssuer" -}}
+{{ printf "%s-selfsign" (include "cert-manager-webhook-cloudns.fullname" .) }}
+{{- end -}}
+
+{{- define "cert-manager-webhook-cloudns.rootCAIssuer" -}}
+{{ printf "%s-ca" (include "cert-manager-webhook-cloudns.fullname" .) }}
+{{- end -}}
+
+{{- define "cert-manager-webhook-cloudns.rootCACertificate" -}}
+{{ printf "%s-ca" (include "cert-manager-webhook-cloudns.fullname" .) }}
+{{- end -}}
+
+{{- define "cert-manager-webhook-cloudns.servingCertificate" -}}
+{{ printf "%s-webhook-tls" (include "cert-manager-webhook-cloudns.fullname" .) }}
+{{- end -}}
