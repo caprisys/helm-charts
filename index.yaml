@@ -3,6 +3,22 @@ entries:
   cert-manager-webhook-cloudns:
   - apiVersion: v2
     appVersion: 1.2.1
+    created: "2025-01-28T16:32:50.974865066Z"
+    description: A Helm chart for Kubernetes
+    digest: 346c194ecf4a80d4b5052cf1de17438035714d104a6f164db13a1aab9e973f46
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: cert-manager-webhook-cloudns
+    sources:
+    - https://github.com/mschirrmeister/cert-manager-webhook-cloudns.git
+    - https://github.com/caprisys/helm-charts/tree/main/charts/cert-manager-webhook-cloudns
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/cert-manager-webhook-cloudns-1.2.2/cert-manager-webhook-cloudns-1.2.2.tgz
+    version: 1.2.2
+  - apiVersion: v2
+    appVersion: 1.2.1
     created: "2025-01-28T13:29:19.106648513Z"
     description: A Helm chart for Kubernetes
     digest: 0fc8aec7a3e303c3d7bb6e8ecd9266bece292b50438e61075f51112ed1d5a3bd
@@ -807,4 +823,4 @@ entries:
     urls:
     - https://github.com/rwunderer/helm-charts/releases/download/sealed-secrets-1.16.1/sealed-secrets-1.16.1.tgz
     version: 1.16.1
-generated: "2025-01-28T13:41:17.432602981Z"
+generated: "2025-01-28T16:32:50.97495851Z"
