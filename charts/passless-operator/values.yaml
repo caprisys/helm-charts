@@ -8,7 +8,7 @@ image:
   repository: quay.io/wavesoftware/passless-operator
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "@sha256:f54f55e73d105c5b67af88fe35e6588cd4f93f33f40e2282b7ad884d3d2cad21"
 
 imagePullSecrets: []
 nameOverride: ""

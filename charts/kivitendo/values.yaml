@@ -26,7 +26,7 @@ image:
   repository: ghcr.io/rwunderer/kivitendo
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "@sha256:36d4a9fba24a17b63307bd4c4c9c4a4b30984e18174d4372f58bd8b1f92a22d9"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -52,7 +52,7 @@ backupJob:
   image:
     repository: ghcr.io/rwunderer/postgres-s3backup
     pullPolicy: IfNotPresent
-    tag: "v0.8.0"
+    tag: "v0.8.0@sha256:5f484e17c4ad70921d2549eb5d1736367185ed463a2b4af1e6cd709d951422af"
 
   resources: {}
 

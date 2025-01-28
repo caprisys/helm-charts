@@ -8,7 +8,7 @@ image:
   repository: quay.io/jetstack/kube-oidc-proxy
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "@sha256:ae93792ea2aad62374a9d69cf26a722417253aa739c2a6072b4329dbabd97394"
 
 imagePullSecrets: []
 nameOverride: ""
