@@ -55,11 +55,11 @@ spec:
             - name: GROUP_NAME
               value: {{ .Values.groupName | quote }}
             {{- range .Values.extraEnv }}
-            - {{- toYaml . | nindent 6 }}
+            - {{- toYaml . | nindent 14 }}
             {{- end }}
           {{- if .Values.envFrom }}
           envFrom:
-            {{- toYaml .Values.envFrom | nindent 4 }}
+            {{- toYaml .Values.envFrom | nindent 12 }}
           {{- end }}
           ports:
             - name: https
