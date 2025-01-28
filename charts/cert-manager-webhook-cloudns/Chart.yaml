@@ -22,3 +22,11 @@ version: 1.2.1
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "1.2.1"
+
+maintainers:
+  - name: rwunderer
+    email: techsupport@caprisys.net
+
+sources:
+  - https://github.com/mschirrmeister/cert-manager-webhook-cloudns.git
+  - https://github.com/caprisys/helm-charts/tree/main/charts/cert-manager-webhook-cloudns
