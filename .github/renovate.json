@@ -16,6 +16,7 @@
         "helm-values",
         "custom.regex"
       ],
+      "pinDigests": false,
       "postUpgradeTasks": {
         "commands": [
           "sed -i \"s/^version:.*/version: $(grep '^version:' {{{packageFileDir}}}/Chart.yaml | awk '{print $2}' | awk -F '[.\"]' '{$3 = $3 + 1} 1' | sed 's/ /./g')/\" {{{packageFileDir}}}/Chart.yaml"
