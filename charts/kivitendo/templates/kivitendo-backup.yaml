@@ -113,12 +113,14 @@ spec:
                 subPath: backup-public-key.asc
                 mountPath: /mnt/backup-public-key.asc
                 readOnly: true
+          {{- with .Values.imagePullSecrets }}
           imagePullSecrets:
-            - name: kivitendo-pull-secret
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
           volumes:
             - name: backup-public-key
               secret:
-                secretName: {{ .Values.backupJob.existingSecretName }}
+                secretName: {{ .Values.backupJob.publicKeySecret | default .Values.backupJob.existingSecretName }}
             - name: home
               emptyDir: {}
 {{- end }}
