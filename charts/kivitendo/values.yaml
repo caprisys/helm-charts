@@ -89,6 +89,12 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+# -- Extra environment variables to pass to the Alloy container.
+extraEnv: []
+
+# -- Maps all the keys on a ConfigMap or Secret as environment variables. https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/#envfromsource-v1-core
+envFrom: []
+
 service:
   type: ClusterIP
   port: 8080

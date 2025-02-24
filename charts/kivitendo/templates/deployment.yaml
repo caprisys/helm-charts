@@ -60,6 +60,13 @@ spec:
                 secretKeyRef:
                   name: {{ .Values.kivitendo.smtpSecret.name }}
                   key: {{ .Values.kivitendo.smtpSecret.key }}
+            {{- range .Values.extraEnv }}
+            - {{- toYaml . | nindent 14 }}
+            {{- end }}
+          {{- if .Values.envFrom }}
+          envFrom:
+            {{- toYaml .Values.envFrom | nindent 12 }}
+          {{- end }}
           ports:
             - name: http-alt
               containerPort: 8080
