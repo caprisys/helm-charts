@@ -492,6 +492,24 @@ entries:
     urls:
     - https://github.com/caprisys/helm-charts/releases/download/kube-oidc-proxy-0.4.2/kube-oidc-proxy-0.4.2.tgz
     version: 0.4.2
+  mariadb:
+  - apiVersion: v2
+    appVersion: 11.4.8
+    created: "2025-09-11T13:03:49.716543867Z"
+    description: A Helm chart for Kubernetes
+    digest: cae0a3c418ed8590751e75cebcd4f60671f5cdf892f10141a35e2891263da30d
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: mariadb
+    sources:
+    - https://github.com/MariaDB/server
+    - https://github.com/MariaDB/mariadb-docker/
+    - https://github.com/caprisys/helm-charts/tree/main/charts/mariadb
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/mariadb-0.1.0/mariadb-0.1.0.tgz
+    version: 0.1.0
   passless-operator:
   - apiVersion: v2
     appVersion: v0.3.0
@@ -911,4 +929,4 @@ entries:
     urls:
     - https://github.com/rwunderer/helm-charts/releases/download/sealed-secrets-1.16.1/sealed-secrets-1.16.1.tgz
     version: 1.16.1
-generated: "2025-09-04T15:09:54.136032576Z"
+generated: "2025-09-11T13:03:49.716736229Z"
