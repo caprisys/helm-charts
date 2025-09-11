@@ -64,7 +64,7 @@ spec:
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           {{- if .Values.startupProbe.enabled }}
-          livenessProbe:
+          startupProbe:
             {{- omit .Values.startupProbe "enabled" | toYaml | nindent 12 }}
           {{- end }}
           {{- if .Values.livenessProbe.enabled }}
