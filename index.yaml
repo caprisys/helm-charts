@@ -495,6 +495,23 @@ entries:
   mariadb:
   - apiVersion: v2
     appVersion: 11.4.8
+    created: "2025-09-11T13:15:06.053443007Z"
+    description: A Helm chart for Kubernetes
+    digest: d25631e5495495816c213d60b7d7dc57b1464be5447895d480412718eef7e124
+    maintainers:
+    - email: techsupport@caprisys.net
+      name: rwunderer
+    name: mariadb
+    sources:
+    - https://github.com/MariaDB/server
+    - https://github.com/MariaDB/mariadb-docker/
+    - https://github.com/caprisys/helm-charts/tree/main/charts/mariadb
+    type: application
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/mariadb-0.1.1/mariadb-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 11.4.8
     created: "2025-09-11T13:03:49.716543867Z"
     description: A Helm chart for Kubernetes
     digest: cae0a3c418ed8590751e75cebcd4f60671f5cdf892f10141a35e2891263da30d
@@ -929,4 +946,4 @@ entries:
     urls:
     - https://github.com/rwunderer/helm-charts/releases/download/sealed-secrets-1.16.1/sealed-secrets-1.16.1.tgz
     version: 1.16.1
-generated: "2025-09-11T13:03:49.716736229Z"
+generated: "2025-09-11T13:15:06.053575225Z"
