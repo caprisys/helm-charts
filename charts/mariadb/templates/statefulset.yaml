@@ -43,6 +43,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
+            - name: MARIADB_AUTO_UPGRADE
+              value: "1"  
             - name: MARIADB_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
@@ -60,7 +62,7 @@ spec:
             - name: MARIADB_DATABASE
               value: {{ .Values.auth.database | quote }}
           ports:
-            - name: http
+            - name: mysql
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           {{- if .Values.startupProbe.enabled }}
