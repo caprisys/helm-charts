@@ -792,6 +792,24 @@ entries:
   ps-operator:
   - apiVersion: v2
     appVersion: 0.8.0
+    created: "2025-09-19T11:53:44.027678853Z"
+    description: A Helm chart for Deploying the Percona Operator for MySQL (based
+      on Percona Server for MySQL)
+    digest: 16fd933671a8024d97eb7bab5b42c79ababf8bcef7c515eed3ebd169251fb3c5
+    home: https://docs.percona.com/percona-operator-for-mysql/ps/
+    maintainers:
+    - email: tomislav.plavcic@percona.com
+      name: tplavcic
+    - email: natalia.marukovich@percona.com
+      name: nmarukovich
+    - email: sergey.pronin@percona.com
+      name: spron-in
+    name: ps-operator
+    urls:
+    - https://github.com/caprisys/helm-charts/releases/download/ps-operator-0.8.6/ps-operator-0.8.6.tgz
+    version: 0.8.6
+  - apiVersion: v2
+    appVersion: 0.8.0
     created: "2025-09-04T15:09:54.135934532Z"
     description: A Helm chart for Deploying the Percona Operator for MySQL (based
       on Percona Server for MySQL)
@@ -963,4 +981,4 @@ entries:
     urls:
     - https://github.com/rwunderer/helm-charts/releases/download/sealed-secrets-1.16.1/sealed-secrets-1.16.1.tgz
     version: 1.16.1
-generated: "2025-09-11T14:53:40.455658929Z"
+generated: "2025-09-19T11:53:44.027775954Z"
