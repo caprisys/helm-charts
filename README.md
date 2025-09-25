@@ -1,5 +1,7 @@
 [![GitHub license](https://img.shields.io/github/license/caprisys/helm-charts.svg)](https://github.com/caprisys/helm-charts/blob/main/LICENSE)
 
+***As a contribution to [unplug Trump](https://www.kuketz-blog.de/unplugtrump-mach-dich-digital-unabhaengig-von-trump-und-big-tech/) this repository has moved to [codeberg](https://codeberg.org/capercode/helm-charts).***
+
 # helm-charts
 Helm charts for various public projects
 
